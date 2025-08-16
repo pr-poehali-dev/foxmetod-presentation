@@ -61,6 +61,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				foxmetod: {
+					dark: '#19374A',
+					orange: '#E8551B',
+					gray: '#3E5E72',
+					'gray-light': '#4D7085',
+					'blue-light': '#7CB1C4'
 				}
 			},
 			borderRadius: {
