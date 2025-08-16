@@ -6,70 +6,62 @@ const RoleSections: React.FC = () => {
   return (
     <>
       {/* Section 6: Роль */}
-      <section id="role" className="min-h-screen flex items-center px-6 py-20">
+      <section id="role" className="min-h-screen flex items-center px-6 lg:px-12 py-20">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-5xl lg:text-6xl font-bold text-white mb-16 text-center">Твоя роль в FOXMetoD</h1>
+          <h1 className="text-4xl lg:text-5xl font-bold text-white mb-16 text-center">Твоя роль</h1>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card className="bg-foxmetod-gray border-0 p-6 hover:bg-foxmetod-gray-light transition-colors">
-              <Icon name="ShoppingCart" className="text-foxmetod-orange mb-4" size={32} />
-              <p className="text-white text-lg">Продажи консалтинговых услуг (готовая база + лиды с рекламы и мероприятий)</p>
+            <Card className="bg-white/5 border border-white/10 p-6 hover:bg-white/10 transition-all duration-300">
+              <Icon name="ShoppingCart" className="text-foxmetod-orange mb-3" size={32} />
+              <p className="text-white">Продажи консалтинговых услуг</p>
             </Card>
-            <Card className="bg-foxmetod-gray border-0 p-6 hover:bg-foxmetod-gray-light transition-colors">
-              <Icon name="Mail" className="text-foxmetod-orange mb-4" size={32} />
-              <p className="text-white text-lg"><strong>Переписка с клиентами</strong> (почта, мессенджеры, CRM)</p>
+            <Card className="bg-white/5 border border-white/10 p-6 hover:bg-white/10 transition-all duration-300">
+              <Icon name="Mail" className="text-foxmetod-orange mb-3" size={32} />
+              <p className="text-white">Переписка с клиентами</p>
             </Card>
-            <Card className="bg-foxmetod-gray border-0 p-6 hover:bg-foxmetod-gray-light transition-colors">
-              <Icon name="Phone" className="text-foxmetod-orange mb-4" size={32} />
-              <p className="text-white text-lg"><strong>Звонки через IP-телефонию</strong> для установления контакта и переговоров</p>
+            <Card className="bg-white/5 border border-white/10 p-6 hover:bg-white/10 transition-all duration-300">
+              <Icon name="Phone" className="text-foxmetod-orange mb-3" size={32} />
+              <p className="text-white">Звонки и переговоры</p>
             </Card>
-            <Card className="bg-foxmetod-gray border-0 p-6 hover:bg-foxmetod-gray-light transition-colors">
-              <Icon name="Video" className="text-foxmetod-orange mb-4" size={32} />
-              <p className="text-white text-lg"><strong>Zoom-встречи</strong>: снятие запроса, знакомство клиента с экспертами</p>
+            <Card className="bg-white/5 border border-white/10 p-6 hover:bg-white/10 transition-all duration-300">
+              <Icon name="Video" className="text-foxmetod-orange mb-3" size={32} />
+              <p className="text-white">Zoom-встречи с клиентами</p>
             </Card>
-            <Card className="bg-foxmetod-gray border-0 p-6 hover:bg-foxmetod-gray-light transition-colors">
-              <Icon name="Database" className="text-foxmetod-orange mb-4" size={32} />
-              <p className="text-white text-lg">Ведение клиентов в CRM <strong>Yougile</strong> → обучение предоставим</p>
+            <Card className="bg-white/5 border border-white/10 p-6 hover:bg-white/10 transition-all duration-300">
+              <Icon name="Database" className="text-foxmetod-orange mb-3" size={32} />
+              <p className="text-white">Ведение CRM Yougile</p>
             </Card>
-            <Card className="bg-foxmetod-gray border-0 p-6 hover:bg-foxmetod-gray-light transition-colors">
-              <Icon name="FileText" className="text-foxmetod-orange mb-4" size={32} />
-              <p className="text-white text-lg"><strong>Составление и согласование коммерческих предложений</strong></p>
-            </Card>
-            <Card className="bg-foxmetod-gray border-0 p-6 hover:bg-foxmetod-gray-light transition-colors">
-              <Icon name="Receipt" className="text-foxmetod-orange mb-4" size={32} />
-              <p className="text-white text-lg"><strong>Подготовка договоров, выставление счетов, контроль оплат</strong></p>
-            </Card>
-            <Card className="bg-foxmetod-gray border-0 p-6 hover:bg-foxmetod-gray-light transition-colors">
-              <Icon name="Clock" className="text-foxmetod-orange mb-4" size={32} />
-              <p className="text-white text-lg">Работа с дебиторской задолженностью</p>
+            <Card className="bg-white/5 border border-white/10 p-6 hover:bg-white/10 transition-all duration-300">
+              <Icon name="FileText" className="text-foxmetod-orange mb-3" size={32} />
+              <p className="text-white">Коммерческие предложения</p>
             </Card>
           </div>
         </div>
       </section>
 
       {/* Section 7: Ожидания */}
-      <section id="expectations" className="min-h-screen flex items-center px-6 py-20 bg-foxmetod-gray/20">
-        <div className="max-w-6xl mx-auto">
-          <h1 className="text-5xl lg:text-6xl font-bold text-white mb-16 text-center">Что мы ждём от тебя</h1>
-          <div className="space-y-8">
-            <Card className="bg-foxmetod-gray border-0 p-8 flex items-center space-x-6">
-              <Icon name="Target" className="text-foxmetod-orange flex-shrink-0" size={48} />
-              <p className="text-xl text-white">Выполнение плана продаж: от <strong className="text-foxmetod-orange">500 000 ₽</strong> на испытательном сроке</p>
+      <section id="expectations" className="min-h-screen flex items-center px-6 lg:px-12 py-20 bg-white/5">
+        <div className="max-w-5xl mx-auto">
+          <h1 className="text-4xl lg:text-5xl font-bold text-white mb-16 text-center">Что важно</h1>
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card className="bg-white/5 border border-white/10 p-8">
+              <Icon name="Target" className="text-foxmetod-orange mb-4" size={40} />
+              <h3 className="text-white font-semibold text-lg mb-2">План продаж</h3>
+              <p className="text-foxmetod-blue-light">От 500 000₽ на испытательном сроке</p>
             </Card>
-            <Card className="bg-foxmetod-gray border-0 p-8 flex items-center space-x-6">
-              <Icon name="MessageSquare" className="text-foxmetod-orange flex-shrink-0" size={48} />
-              <p className="text-xl text-white">Умение вести грамотную деловую переписку</p>
+            <Card className="bg-white/5 border border-white/10 p-8">
+              <Icon name="MessageSquare" className="text-foxmetod-orange mb-4" size={40} />
+              <h3 className="text-white font-semibold text-lg mb-2">Коммуникация</h3>
+              <p className="text-foxmetod-blue-light">Грамотная деловая переписка</p>
             </Card>
-            <Card className="bg-foxmetod-gray border-0 p-8 flex items-center space-x-6">
-              <Icon name="Phone" className="text-foxmetod-orange flex-shrink-0" size={48} />
-              <p className="text-xl text-white">Навык проведения звонков и Zoom-встреч</p>
+            <Card className="bg-white/5 border border-white/10 p-8">
+              <Icon name="Phone" className="text-foxmetod-orange mb-4" size={40} />
+              <h3 className="text-white font-semibold text-lg mb-2">Переговоры</h3>
+              <p className="text-foxmetod-blue-light">Навыки проведения встреч</p>
             </Card>
-            <Card className="bg-foxmetod-gray border-0 p-8 flex items-center space-x-6">
-              <Icon name="Eye" className="text-foxmetod-orange flex-shrink-0" size={48} />
-              <p className="text-xl text-white">Внимательность к документам и срокам (КП, договоры, счета)</p>
-            </Card>
-            <Card className="bg-foxmetod-gray border-0 p-8 flex items-center space-x-6">
-              <Icon name="Zap" className="text-foxmetod-orange flex-shrink-0" size={48} />
-              <p className="text-xl text-white">Инициативность и готовность учиться</p>
+            <Card className="bg-white/5 border border-white/10 p-8">
+              <Icon name="Zap" className="text-foxmetod-orange mb-4" size={40} />
+              <h3 className="text-white font-semibold text-lg mb-2">Инициатива</h3>
+              <p className="text-foxmetod-blue-light">Готовность учиться и развиваться</p>
             </Card>
           </div>
         </div>

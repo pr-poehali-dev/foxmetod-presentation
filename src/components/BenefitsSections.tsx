@@ -6,66 +6,57 @@ const BenefitsSections: React.FC = () => {
   return (
     <>
       {/* Section 8: Бенефиты */}
-      <section id="benefits" className="min-h-screen flex items-center px-6 py-20">
+      <section id="benefits" className="min-h-screen flex items-center px-6 lg:px-12 py-20">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-5xl lg:text-6xl font-bold text-white mb-16 text-center">Что получаешь ты</h1>
+          <h1 className="text-4xl lg:text-5xl font-bold text-white mb-16 text-center">Что получаешь</h1>
           <div className="grid lg:grid-cols-2 gap-12 items-start">
-            <div className="space-y-6">
-              <Card className="bg-foxmetod-gray border-0 p-6 flex items-center space-x-4">
-                <Icon name="DollarSign" className="text-foxmetod-orange" size={32} />
-                <p className="text-white text-lg">Высокий доход: фикс + % от выручки (10% + бонусы)</p>
+            <div className="space-y-4">
+              <Card className="bg-white/5 border border-white/10 p-6">
+                <div className="flex items-center space-x-4">
+                  <Icon name="DollarSign" className="text-foxmetod-orange" size={32} />
+                  <p className="text-white">Высокий доход: фикс + 10% от выручки</p>
+                </div>
               </Card>
-              <Card className="bg-foxmetod-gray border-0 p-6 flex items-center space-x-4">
-                <Icon name="TrendingUp" className="text-foxmetod-orange" size={32} />
-                <p className="text-white text-lg">Нет потолка дохода — чем больше сделок, тем выше заработок</p>
+              <Card className="bg-white/5 border border-white/10 p-6">
+                <div className="flex items-center space-x-4">
+                  <Icon name="TrendingUp" className="text-foxmetod-orange" size={32} />
+                  <p className="text-white">Нет потолка дохода</p>
+                </div>
               </Card>
-              <Card className="bg-foxmetod-gray border-0 p-6 flex items-center space-x-4">
-                <Icon name="Calendar" className="text-foxmetod-orange" size={32} />
-                <p className="text-white text-lg">Оплачиваемый отпуск 28 дней</p>
+              <Card className="bg-white/5 border border-white/10 p-6">
+                <div className="flex items-center space-x-4">
+                  <Icon name="Calendar" className="text-foxmetod-orange" size={32} />
+                  <p className="text-white">28 дней отпуска</p>
+                </div>
               </Card>
-              <Card className="bg-foxmetod-gray border-0 p-6 flex items-center space-x-4">
-                <Icon name="Users" className="text-foxmetod-orange" size={32} />
-                <p className="text-white text-lg">Поддержка и обучение от команды</p>
+              <Card className="bg-white/5 border border-white/10 p-6">
+                <div className="flex items-center space-x-4">
+                  <Icon name="Users" className="text-foxmetod-orange" size={32} />
+                  <p className="text-white">Поддержка команды</p>
+                </div>
               </Card>
-              <Card className="bg-foxmetod-gray border-0 p-6 flex items-center space-x-4">
-                <Icon name="Briefcase" className="text-foxmetod-orange" size={32} />
-                <p className="text-white text-lg"><strong>Возможность участвовать в стратегических сессиях клиентов</strong></p>
-              </Card>
-              <Card className="bg-foxmetod-gray border-0 p-6 flex items-center space-x-4">
-                <Icon name="GraduationCap" className="text-foxmetod-orange" size={32} />
-                <p className="text-white text-lg"><strong>Участие в консалтинговых проектах в роли помощника</strong></p>
-              </Card>
-              <Card className="bg-foxmetod-gray border-0 p-6 flex items-center space-x-4">
-                <Icon name="Gift" className="text-foxmetod-orange" size={32} />
-                <p className="text-white text-lg">Корпоративные подарки</p>
+              <Card className="bg-white/5 border border-white/10 p-6">
+                <div className="flex items-center space-x-4">
+                  <Icon name="GraduationCap" className="text-foxmetod-orange" size={32} />
+                  <p className="text-white">Участие в проектах</p>
+                </div>
               </Card>
             </div>
             
-            <Card className="bg-foxmetod-gray border-foxmetod-orange border-2 p-8">
-              <h3 className="text-3xl font-bold text-white mb-8 text-center">Потенциальный доход</h3>
-              <div className="space-y-4 mb-8">
-                <div className="flex justify-between items-center p-4 bg-foxmetod-dark rounded-lg">
-                  <span className="text-white text-lg">Минимум</span>
-                  <span className="text-foxmetod-orange font-bold text-xl">80 тыс. ₽</span>
+            <Card className="bg-foxmetod-orange/10 border border-foxmetod-orange/30 p-8">
+              <h3 className="text-2xl font-bold text-white mb-8 text-center">Доход</h3>
+              <div className="space-y-4">
+                <div className="flex justify-between items-center p-4 bg-white/5 rounded-xl">
+                  <span className="text-white">Минимум</span>
+                  <span className="text-foxmetod-orange font-bold text-lg">80 000₽</span>
                 </div>
-                <div className="flex justify-between items-center p-4 bg-foxmetod-dark rounded-lg">
-                  <span className="text-white text-lg">Базовый</span>
-                  <span className="text-foxmetod-orange font-bold text-xl">150 тыс. ₽</span>
+                <div className="flex justify-between items-center p-4 bg-white/5 rounded-xl">
+                  <span className="text-white">Базовый</span>
+                  <span className="text-foxmetod-orange font-bold text-lg">150 000₽</span>
                 </div>
-                <div className="flex justify-between items-center p-4 bg-foxmetod-dark rounded-lg">
-                  <span className="text-white text-lg">Амбициозный</span>
-                  <span className="text-foxmetod-orange font-bold text-xl">300+ тыс. ₽</span>
-                </div>
-              </div>
-              <div className="h-48 flex items-end justify-center space-x-6">
-                <div className="bg-foxmetod-orange w-20 h-16 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold">80к</span>
-                </div>
-                <div className="bg-foxmetod-orange w-20 h-24 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold">150к</span>
-                </div>
-                <div className="bg-foxmetod-orange w-20 h-32 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold">300к+</span>
+                <div className="flex justify-between items-center p-4 bg-white/5 rounded-xl">
+                  <span className="text-white">Амбициозный</span>
+                  <span className="text-foxmetod-orange font-bold text-lg">300 000₽+</span>
                 </div>
               </div>
             </Card>
@@ -73,57 +64,43 @@ const BenefitsSections: React.FC = () => {
         </div>
       </section>
 
-      {/* Section 9: Клиенты и кейсы */}
-      <section id="cases" className="min-h-screen flex items-center px-6 py-20 bg-foxmetod-gray/20">
-        <div className="max-w-6xl mx-auto">
-          <h1 className="text-5xl lg:text-6xl font-bold text-white mb-16 text-center">Наши клиенты и кейсы</h1>
-          <div className="space-y-8">
-            <Card className="bg-foxmetod-gray border-0 p-8 flex items-center space-x-6">
-              <Icon name="Building" className="text-foxmetod-orange flex-shrink-0" size={64} />
-              <p className="text-xl text-white">Малый и средний бизнес, крупные компании из разных сфер</p>
+      {/* Section 9: Кейсы */}
+      <section id="cases" className="min-h-screen flex items-center px-6 lg:px-12 py-20 bg-white/5">
+        <div className="max-w-5xl mx-auto">
+          <h1 className="text-4xl lg:text-5xl font-bold text-white mb-16 text-center">Кейсы</h1>
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card className="bg-white/5 border border-white/10 p-8">
+              <h3 className="text-foxmetod-orange font-semibold text-lg mb-4">Кейс 1</h3>
+              <p className="text-white leading-relaxed">
+                Стратегическая сессия → CRM и сопровождение → рост продаж на <span className="text-foxmetod-orange font-bold">30%</span>
+              </p>
             </Card>
-            
-            <div className="grid md:grid-cols-2 gap-8">
-              <Card className="bg-foxmetod-gray border-foxmetod-orange border-2 p-8">
-                <div className="flex items-start space-x-4 mb-4">
-                  <Icon name="ArrowRight" className="text-foxmetod-orange mt-1" size={32} />
-                  <div>
-                    <p className="text-white text-lg mb-2"><strong>Кейс 1:</strong></p>
-                    <p className="text-foxmetod-blue-light">Компания пришла на стратегическую сессию → докупила CRM и сопровождение → увеличила продажи на <span className="text-foxmetod-orange font-bold">30%</span></p>
-                  </div>
-                </div>
-              </Card>
-              
-              <Card className="bg-foxmetod-gray border-foxmetod-orange border-2 p-8">
-                <div className="flex items-start space-x-4 mb-4">
-                  <Icon name="ArrowRight" className="text-foxmetod-orange mt-1" size={32} />
-                  <div>
-                    <p className="text-white text-lg mb-2"><strong>Кейс 2:</strong></p>
-                    <p className="text-foxmetod-blue-light">Проект по внедрению ИИ → снижение ручных операций на <span className="text-foxmetod-orange font-bold">40%</span></p>
-                  </div>
-                </div>
-              </Card>
-            </div>
+            <Card className="bg-white/5 border border-white/10 p-8">
+              <h3 className="text-foxmetod-orange font-semibold text-lg mb-4">Кейс 2</h3>
+              <p className="text-white leading-relaxed">
+                Внедрение ИИ → снижение ручных операций на <span className="text-foxmetod-orange font-bold">40%</span>
+              </p>
+            </Card>
           </div>
         </div>
       </section>
 
       {/* Section 10: Атмосфера */}
-      <section id="atmosphere" className="min-h-screen flex items-center px-6 py-20">
-        <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-5xl lg:text-6xl font-bold text-white mb-16">Атмосфера FOXMetoD</h1>
+      <section id="atmosphere" className="min-h-screen flex items-center px-6 lg:px-12 py-20">
+        <div className="max-w-5xl mx-auto text-center">
+          <h1 className="text-4xl lg:text-5xl font-bold text-white mb-16">Атмосфера</h1>
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="bg-foxmetod-gray border-0 p-8 text-center hover:bg-foxmetod-gray-light transition-colors">
-              <Icon name="Users" className="text-foxmetod-orange mx-auto mb-6" size={80} />
-              <p className="text-xl text-white">Мы — команда экспертов, которая верит в силу идей и системного подхода</p>
+            <Card className="bg-white/5 border border-white/10 p-8 text-center hover:bg-white/10 transition-all duration-300">
+              <Icon name="Users" className="text-foxmetod-orange mx-auto mb-4" size={48} />
+              <p className="text-white">Команда экспертов</p>
             </Card>
-            <Card className="bg-foxmetod-gray border-0 p-8 text-center hover:bg-foxmetod-gray-light transition-colors">
-              <Icon name="Zap" className="text-foxmetod-orange mx-auto mb-6" size={80} />
-              <p className="text-xl text-white">У нас поддержка и драйв, а не бюрократия</p>
+            <Card className="bg-white/5 border border-white/10 p-8 text-center hover:bg-white/10 transition-all duration-300">
+              <Icon name="Zap" className="text-foxmetod-orange mx-auto mb-4" size={48} />
+              <p className="text-white">Поддержка, не бюрократия</p>
             </Card>
-            <Card className="bg-foxmetod-gray border-0 p-8 text-center hover:bg-foxmetod-gray-light transition-colors">
-              <Icon name="TrendingUp" className="text-foxmetod-orange mx-auto mb-6" size={80} />
-              <p className="text-xl text-white">Мы растём вместе с клиентами</p>
+            <Card className="bg-white/5 border border-white/10 p-8 text-center hover:bg-white/10 transition-all duration-300">
+              <Icon name="TrendingUp" className="text-foxmetod-orange mx-auto mb-4" size={48} />
+              <p className="text-white">Растём вместе</p>
             </Card>
           </div>
         </div>
